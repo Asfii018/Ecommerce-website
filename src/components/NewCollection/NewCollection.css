@@ -1,0 +1,109 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.NewCollection {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.NewCollection h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.NewCollection hr {
+  width: 60px;
+  height: 3px;
+  background-color: #007BFF;
+  border: none;
+  margin: 10px auto 20px auto;
+}
+
+.collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Styles for individual collection items */
+.collection .item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.collection .item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.collection .item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.collection .item-details {
+  padding: 10px;
+  text-align: left;
+}
+
+.collection .item-details h2 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.collection .item-details p {
+  font-size: 1em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.collection .item-details .price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.collection .item-details .old-price {
+  text-decoration: line-through;
+  font-size: 1em;
+  color: #999;
+  margin-right: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 20px) {
+  .collection {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .collection .item {
+      width: 80%;
+      margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 240px) and (max-width: 270px) {
+  .collection .item {
+      width: 45%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .collection .item {
+      width: 20%;
+  }
+}

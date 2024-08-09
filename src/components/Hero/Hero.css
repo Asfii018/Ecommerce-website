@@ -1,0 +1,159 @@
+.Hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Hero__left {
+  flex: 1;
+  padding: 20px;
+}
+
+.Hero__left h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #333;
+  font-family: 'Bradley Hand', cursive;
+  
+}
+
+.hand-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1px;
+  font-size: 30px;
+  color: #4CAF50; /* Green color for icon */
+  line-height: 0.5;
+  
+  
+}
+
+.hand-icon p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 10px;
+  line-height: 0.5;
+}
+
+.hand-icon img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  letter-spacing: 5px;
+  line-height: 0.5;
+}
+
+.Hero__left p {
+  font-size: 30px;
+  color: #0c0c0c;
+  margin-bottom: 10px; /* Increased margin for better spacing */
+  font-weight: bold;
+  letter-spacing: 5px;
+  line-height: 0.5;
+}
+
+.Hero-latest-btn {
+  display: flex;
+  align-items: lift;
+  justify-content: lift;
+  margin-top: 50px;
+  
+}
+
+.Hero-latest-btn p {
+  font-size: 30px;
+  margin-right: 30px;
+  align-items: lift;
+  
+ 
+}
+
+.Hero-latest-btn button {
+  padding: 10px 30px; /* Adjust padding for button size */
+  background-color: #2b1947; /* Background color */
+  color: white; /* Text color */
+  border: 1px solid #395185; /* Border with light gray color */
+  font-size: 24px; /* Font size */
+  cursor: pointer; /* Cursor type on hover */
+  border-radius: 50px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  align-items: lift;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  
+}
+.Hero-latest-btn button:hover {
+  background-color: #544857;
+  transform: scale(1.05); /* Slightly scale up on hover for interactive feel */
+  
+}
+
+.Hero-right {
+  flex: 1;
+  padding: 20px;
+  background-color: transparent; 
+  
+}
+
+.Hero-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+  
+}
+
+@media (max-width: 1024px) {
+  .Hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Hero__left {
+    margin-bottom: 30px;
+  }
+
+  .hand-icon {
+    font-size: 24px;
+  }
+
+  .Hero__left h2 {
+    font-size: 40px;
+  }
+
+  .Hero__left p,
+  .Hero-latest-btn p {
+    font-size: 24px;
+  }
+
+  .Hero-latest-btn button {
+    padding: 8px 24px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Hero__left h2 {
+    font-size: 36px;
+  }
+
+  .hand-icon {
+    font-size: 20px;
+  }
+
+  .Hero__left p,
+  .Hero-latest-btn p {
+    font-size: 20px;
+  }
+
+  .Hero-latest-btn button {
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+}

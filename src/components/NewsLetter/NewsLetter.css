@@ -1,0 +1,96 @@
+/* NewsLetter.css */
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.newsletter {
+  background-color: #f8f9fa; /* Light grey background */
+  padding: 20px; /* Padding for spacing */
+  text-align: center; /* Center text alignment */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 1180px; /* Max width of the container */
+  margin: 0 auto; /* Center the container */
+  animation: fadeInUp 1s ease-in-out; /* Animation for the container */
+  margin-top: 30px;
+}
+
+.newsletter h1 {
+  font-size: 26px; /* Larger font size for heading */
+  color: #333; /* Dark grey color */
+  margin-bottom: 10px; /* Space below the heading */
+  animation: fadeInUp 1s ease-in-out 0.2s backwards; /* Delayed animation */
+  font-family: 'Bradley Hand', cursive;
+}
+
+.newsletter p {
+  font-size: 20px; /* Regular font size for paragraph */
+  color: #666; /* Lighter grey color */
+  margin-bottom: 20px; /* Space below the paragraph */
+  animation: fadeInUp 1s ease-in-out 0.4s backwards; /* Delayed animation */
+  font-family: 'Bradley Hand', cursive;
+}
+
+.newsletter input[type="email"] {
+  padding: 12px; /* Padding inside the input */
+  font-size: 14px; /* Font size for the input text */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 30px; /* Rounded corners for the input */
+  width: calc(50% - 80px); /* Width adjustment for input */
+  box-sizing: border-box; /* Ensure padding doesn't increase the width */
+  animation: fadeInUp 1s ease-in-out 0.6s backwards; /* Delayed animation */
+}
+
+.newsletter button {
+  padding: 12px 20px; /* Padding inside the button */
+  font-size: 14px; /* Font size for the button text */
+  background-color: #007bff; /* Blue background color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 30px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-left: 10px; /* Space between input and button */
+  animation: fadeInUp 1s ease-in-out 0.8s backwards; /* Delayed animation */
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.newsletter button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.newsletter div {
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center align items */
+}
+
+@media (max-width: 768px) {
+  .newsletter {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .newsletter h1 {
+    font-size: 22px; /* Decreased font size for heading on smaller screens */
+  }
+
+  .newsletter p {
+    font-size: 18px; /* Decreased font size for paragraph on smaller screens */
+  }
+
+  .newsletter input[type="email"] {
+    width: 100%; /* Full width for input on smaller screens */
+  }
+
+  .newsletter button {
+    margin-left: 0; /* Remove margin between input and button on smaller screens */
+    margin-top: 10px; /* Add space above button on smaller screens */
+    width: 100%; /* Full width for button on smaller screens */
+  }
+}

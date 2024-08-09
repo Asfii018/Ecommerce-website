@@ -1,0 +1,105 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8a6464;
+  padding: 3px 3px;
+  border-radius: 200px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.nav_logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav_logo img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.nav_logo p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.Nav-menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.Nav-menu li {
+  margin: 0 10px;
+}
+
+.Nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.Nav-menu a:hover {
+  text-decoration: underline;
+}
+
+.Nav-login-cart {
+  display: flex;
+  align-items: center;
+  background-size: 75;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.Nav-login-cart button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #ccc;
+
+}
+
+.Nav-login-cart img {
+  height: 30px;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .nav_logo {
+    margin-bottom: 10px; /* Add space between logo and menu/cart on smaller screens */
+  }
+
+  .Nav-menu {
+    margin-top: 10px; /* Add space above menu items on smaller screens */
+  }
+
+  .Nav-menu li {
+    margin: 0 5px; /* Decrease margin between menu items on smaller screens */
+  }
+
+  .Nav-menu a {
+    font-size: 16px; /* Decreased font size for menu items on smaller screens */
+  }
+
+  .Nav-login-cart {
+    margin-top: 10px; /* Add space above login/cart section on smaller screens */
+  }
+
+  .Nav-login-cart button {
+    padding: 6px 12px; /* Adjusted padding for smaller screens */
+    font-size: 16px; /* Adjusted font size for smaller screens */
+  }
+}
+
+

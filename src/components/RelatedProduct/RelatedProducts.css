@@ -1,0 +1,49 @@
+.relatedproducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 90vh;
+}
+
+.relatedproducts h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.relatedproducts hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: #252525;
+}
+
+.relatedproducts-item {
+  margin: 50px;
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .relatedproducts {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .relatedproducts h1 {
+    font-size: 36px; /* Decrease font size for smaller screens */
+  }
+
+  .relatedproducts hr {
+    width: 150px; /* Decrease width of hr for smaller screens */
+    height: 4px; /* Decrease height of hr for smaller screens */
+    margin-bottom: 30px; /* Adjust margin for smaller screens */
+  }
+
+  .relatedproducts-item {
+    margin: 20px; /* Adjust margin for smaller screens */
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center align items on smaller screens */
+    gap: 20px; /* Adjust gap between items for smaller screens */
+  }
+}
